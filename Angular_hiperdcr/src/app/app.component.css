@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+.header {
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    height: 60px;
+    background-color: #30323e;
+    color: #fff;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.upload {
+    font-size: 40px;
+    color: #30323e;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    margin-top: 100px;
+}
+
+.upload i {
+    transform: translateX(110px);
+    margin-top: 30px;
+}
+
+.btn {
+    transform: translateX(110px);
+    height: 25px;
+    width: 80px;
+    color: #30323e;
+    background-color: #ddd;
+    border-radius: 5px;
+    cursor: not-allowed;
+    border: none;
+}
+
+.result {
+    opacity: 0;
+}
+
+.result.success {
+    margin-top: 35px;
+    transform: translateX(30px);
+    opacity: 1;
+}
+
+.btn.active {
+    background-color: #30323e;
+    color: #fff;
+    cursor: pointer;
+}
+
+.fa-solid.fa-file-arrow-up {
+    position: relative;
+    display: flex;
+    font-size: 100px;
+    flex-direction: column;
+}
+
+.status {
+    margin-top: 20px;
+}

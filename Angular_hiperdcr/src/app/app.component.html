@@ -1,0 +1,13 @@
+<div class="header">:hiperDCR</div>
+
+<div class="main">
+    <div class="upload">
+        <p id="main-frase">Faça o upload do arquivo PDF a ser validado.</p>
+        <form enctype="multipart/form-data">
+            <i class="fa-solid fa-file-arrow-up">
+                <input class="file" type="file" class="file-input"
+                (change)="onFileSelected($event)" accept=".pdf" #fileUpload>
+            </i>
+        </form>        
+        <p class="status">{{isActive ? 'Aprovado' : 'Reprovado'}}</p>
+    </div>

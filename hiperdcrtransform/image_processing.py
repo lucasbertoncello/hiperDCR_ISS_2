@@ -11,7 +11,7 @@ class Image_processing:
 
         for i, image in enumerate(pages):
             fname = 'image'+str(i)+'.png'
-            image.save('image.png', "PNG")
+            image.save(fname, "PNG")
 
         im = Image.open('image1.png')
         im_crop = im.crop((3299,12,4034,288))

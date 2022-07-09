@@ -29,7 +29,7 @@ export class AppComponent {
 
 
 
-            this.http.post("https://hiperdcr.hiperstream.com/hiperDCR", formData).subscribe((data: any) => {
+            this.http.post("https://hiperdcrtransform.hiperstream.com/hiperDCR", formData).subscribe((data: any) => {
               data == false ? this.isActive = false : this.isActive = true
             });
 
